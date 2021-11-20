@@ -1,6 +1,4 @@
 
-
-//ostatni script
 var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 /**
@@ -28,17 +26,16 @@ function displayResult(argPlayerMove, argComputerMove) {
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'kamien' && argComputerMove == 'nozyce') {
-    printMessage('Wygrywasz');
+    printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'nozyce' && argComputerMove == 'papier') {
-    printMessage('Wygrywasz');
-  } else if (argPlayerMove == argComputerMove) {
-    printMessage('Remis');
+    printMessage('Wygrywasz!');
+  } else if (computerMove == playerMove) {
+    printMessage('Remis!');
   } else {
     printMessage('Przegrywasz :(');
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
-printMessage();
 playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('wybór ruchu gracza to: ' + playerInput);
 playerMove = getMoveName(playerInput);
@@ -48,3 +45,5 @@ console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
+Step JavaScript
+Run JavaScript
