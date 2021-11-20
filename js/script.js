@@ -47,3 +47,42 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 Step JavaScript
 Run JavaScript
+
+var argButtonName, buttonNozyce, buttonPaper, buttonRock, buttonScissors, buttonTest;
+
+/**
+ * Describe this function...
+ */
+function buttonClicked(argButtonName) {
+  clearMessages();
+  console.log(argButtonName + ' został kliknięty');
+}
+buttonTest = document.getElementById('button-test');
+buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
+buttonRock = document.getElementById('button-rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('Guzik Kamien'); });
+buttonPaper = document.getElementById('button-paper');
+buttonPaper.addEventListener('click', function(){ buttonClicked('Guzik Papier'); });
+buttonNozyce = document.getElementById('button-scissors');
+buttonNozyce.addEventListener('click', function(){ buttonClicked('Guzik Nozyce'); });
+
+//ustalenie ruchu gracza
+var playerInput, playerMove;
+
+
+1 + 1;
+
+1 + 1;
+
+playerMove = argButtonName;
+console.log('Wpisana odpowiedź to: ' + playerInput);
+if (playerInput == '1') {
+  playerMove = 'kamień';
+} else if (playerInput == '2') {
+  playerMove = 'papier';
+} else if (playerInput == '3') {
+  playerMove = 'nozyce';
+} else {
+  playerMove = 'nieznany ruch';
+}
+printMessage('Twój ruch: ' + playerMove);
