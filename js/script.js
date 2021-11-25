@@ -1,5 +1,5 @@
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+let argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
 
 /**
  * Describe this function...
@@ -45,10 +45,9 @@ console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
-Step JavaScript
-Run JavaScript
 
-var argButtonName, buttonNozyce, buttonPaper, buttonRock, buttonScissors, buttonTest;
+
+const argButtonName, buttonNozyce, buttonPaper, buttonRock, buttonScissors, buttonTest;
 
 /**
  * Describe this function...
@@ -67,7 +66,7 @@ buttonNozyce = document.getElementById('button-scissors');
 buttonNozyce.addEventListener('click', function(){ buttonClicked('Guzik Nozyce'); });
 
 //ustalenie ruchu gracza
-var playerInput, playerMove;
+let playerInput, playerMove;
 
 
 1 + 1;
